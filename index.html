@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Add style sheet here -->
+
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1>Collect the Crystals!</h1>
+        </div>
+        <div class="row">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+            <p>You win the round by matching your total score to the random number, and you lose the round if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>For each new round, the game will change the values of each crystal.</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p id="random-number">Placeholder:</p>
+            </div>
+            <div class="col-2">
+                <p id="wins">Placeholder:</p>
+                <p id="losses">Placeholder:</p>
+            </div>
+        </div>
+        <div class="row">
+            <button id="crystal-1" class="btn btn-primary">Crystal 1</button>
+            <button id="crystal-2" class="btn btn-secondary">Crystal 2</button>
+            <button id="crystal-3" class="btn btn-danger">Crystal 3</buttton>
+            <button id="crystal-4" class="btn btn-warning">Crystal 4</button>
+        </div>
+        <div class="row">
+            <p>Your score is:</p>
+        </div>
+        <div class="row">
+            <p id="score"></p>
+        </div>
+
+
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+
+</html>
