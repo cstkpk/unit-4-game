@@ -66,8 +66,47 @@ function updateScore() {
     $("#score").text(score);
 }
 
-// Function to reset stats (other than wins and losses, which accumulate through all rounds of the game)
+// Function that generates a new random number
+function newRandomNumber() {
+    randomNumber = parseInt([Math.floor(Math.random() * 101 + 20)]);
+    $("#random-number").text(randomNumber);
+    console.log("New random number: " + randomNumber);
+}
 
+// Crystal 1: Function that generates a new random value
+function newCrystal1() {
+    crystal1 = parseInt([Math.floor(Math.random() * 12 + 1)]);
+    console.log("New crystal 1 = " + crystal1);
+}
+
+// Crystal 2: Function that generates a new random value
+function newCrystal2() {
+    crystal2 = parseInt([Math.floor(Math.random() * 12 + 1)]);
+    console.log("New crystal 2 = " + crystal2);
+}
+
+// Crystal 3: Function that generates a new random value
+function newCrystal3() {
+    crystal1 = parseInt([Math.floor(Math.random() * 12 + 1)]);
+    console.log("New crystal 3 = " + crystal3);
+}
+
+// Crystal 4: Function that generates a new random value
+function newCrystal4() {
+    crystal4 = parseInt([Math.floor(Math.random() * 12 + 1)]);
+    console.log("New crystal 4 = " + crystal4);
+}
+
+// Function to reset stats (other than wins and losses, which accumulate through all rounds of the game)
+function reset() {
+    score = 0;
+    updateScore();
+    newRandomNumber();
+    newCrystal1();
+    newCrystal2();
+    newCrystal3();
+    newCrystal4();
+}
 
 // THE GAME
 
@@ -84,11 +123,14 @@ if (score === randomNumber) {
     wins++;
     updateWins();
     console.log("You win!");
+    reset();
 } 
+// If the user's score exceeds the randomly generated number, their losses go up by one and the game resets
 else if (score > randomNumber) {
     losses++;
     updateLosses();
     console.log("You lose :(");
+    reset();
 }
 
 });
