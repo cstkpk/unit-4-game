@@ -1,8 +1,9 @@
 
 
 // We start the game with the following stats:
-var score = 0;
+var wins = 0;
 var losses = 0;
+var score = [];
 
 // Function that randomly generates a number between 1 - 120
 var randomNumber = [Math.floor(Math.random() * 101 + 20)];
@@ -24,3 +25,31 @@ var crystal3 = [Math.floor(Math.random() * 12 + 1)];
 // Crystal 4: function that randomly generates a number between 1 - 12
 var crystal4 = [Math.floor(Math.random() * 12 + 1)];
     console.log("Crystal 4 = " + crystal4);
+
+
+// When you click each crystal, their randomly assigned value will get added to the score box
+// N.B. Still need to figure out how to add the values together
+$("#crystal-1").on("click", function () {
+    $("#score").text(score + crystal1)
+});
+
+$("#crystal-2").on("click", function() {
+    $("#score").text(crystal2)
+});
+
+$("#crystal-3").on("click", function() {
+    $("#score").text(crystal3)
+});
+
+$("#crystal-4").on("click", function() {
+    $("#score").text(crystal4)
+});
+
+// $("#crystal1").on("click", function () {
+
+// })
+
+
+// if 
+// score.push(crystal1);
+// console.log(score);
