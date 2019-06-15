@@ -32,28 +32,23 @@ var crystal4 = parseInt([Math.floor(Math.random() * 12 + 1)]);
 // When you click each crystal, their randomly assigned value will get added to the score box
 // N.B. Still need to figure out how to add the values together
 $("#crystal-1").on("click", function () {
-    $("#score").text(crystal1);
     score = score + crystal1
-    console.log("Score: " + score);
+    $("#score").text(score);
+    // console.log("Score: " + score);
 });
 
 $("#crystal-2").on("click", function() {
-    $("#score").text(crystal2)
+    score = score + crystal2;
+    $("#score").text(score);
 });
 
 $("#crystal-3").on("click", function() {
-    $("#score").text(crystal3)
+    score = score + crystal3;
+    $("#score").text(score);
 });
 
 $("#crystal-4").on("click", function() {
-    $("#score").text(crystal4)
+    score = score + crystal4;
+    $("#score").text(score);
 });
 
-// $("#crystal1").on("click", function () {
-
-// })
-
-
-// if 
-// score.push(crystal1);
-// console.log(score);
