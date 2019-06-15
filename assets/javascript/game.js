@@ -30,7 +30,6 @@ var crystal4 = parseInt([Math.floor(Math.random() * 12 + 1)]);
 
 
 // When you click each crystal, their randomly assigned value will get added to the score box
-// N.B. Still need to figure out how to add the values together
 $("#crystal-1").on("click", function () {
     score = score + crystal1
     $("#score").text(score);
@@ -52,3 +51,44 @@ $("#crystal-4").on("click", function() {
     $("#score").text(score);
 });
 
+// Function that updates wins
+function updateWins() {
+    $("#wins").text("Wins: " + wins);
+}
+
+// Function that updates losses
+function updateLosses() {
+    $("#losses").text("Losses: " + losses);
+}
+
+// Function that updates score
+function updateScore() {
+    $("#score").text(score);
+}
+
+// Function to reset stats (other than wins and losses, which accumulate through all rounds of the game)
+
+
+// THE GAME
+
+// Calling functions to start the game
+updateWins();
+updateLosses();
+updateScore();
+
+// When the user clicks a crystal, it will run the following function: 
+$(".btn").on("click", function() {
+
+// If the user's score equals the randomly generated number, their score goes up by one and the game resets
+if (score === randomNumber) {
+    wins++;
+    updateWins();
+    console.log("You win!");
+} 
+else if (score > randomNumber) {
+    losses++;
+    updateLosses();
+    console.log("You lose :(");
+}
+
+});
