@@ -25,26 +25,26 @@
     <div class="container">
         <div class="row instructions">
             <div class="col-sm-12">
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                <p>There are four crystals below. By clicking on a crystal, you add a specific amount of points to your total score.</p>
                 <p>You win the round by matching your total score to the random number, and you lose the round if your total score goes above the random number.</p>
                 <p>The value of each crystal is hidden from you until you click on it.</p>
                 <p>For each new round, the game will change the values of each crystal.</p>
             </div>
-        </div>
+        </div><br>
         <div class="row">
             <div class="col-4">
-                <p id="random-number"></p>
+                <p id="random-number" class="p-2"></p>
             </div>
             <div class="col-2">
-                <p id="wins"></p>
-                <p id="losses"></p>
+                <p id="wins" class="p-2"></p>
+                <p id="losses" class="p-2"></p>
             </div>
             <div class="col-6">
                 <p id="result"></p>
             </div>
         </div>
         <div class="row">
+            <div class="col-sm-2"></div>
             <div class="col-sm-2">
             <img id="crystal-1" class="img-fluid img-crystal" src="assets/images/363864.png" alt="Purple crystal">
             </div>
@@ -60,12 +60,12 @@
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <p>Your total score is:</p>
+                <p class="total-score p-2">Your total score is:</p>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <p id="score"></p>
+                <p id="score" class="p-2"></p>
             </div>
         </div>
 

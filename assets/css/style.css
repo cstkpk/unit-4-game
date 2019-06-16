@@ -1,35 +1,57 @@
 body {
-    background-image: url("green_dust_scratch.png");
+    background-image: url("square-2696800_1280.png");
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     text-align: center;
-    /* background-color: pink; */
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'Vast Shadow', cursive;
+    background-color: rgb(255, 255, 255, 1);
 }
 
 .instructions {
-    padding-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 1);
 }
 
 #random-number {
     text-align: center;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
-    padding-top: 15px;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+#wins {
+    background-color: rgb(255, 255, 255, 1);
+}
+
+#losses {
+    background-color: rgb(255, 255, 255, 1);
 }
 
 #result {
-    font-size: 22px;
+    font-size: 30px;
+    letter-spacing: 4px;
     text-align: center;
     font-weight: bold;
+    background-color: rgb(255, 255, 255, 1);
 }
 
 .img-crystal {
     width: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.total-score {
+    background-color: rgb(255, 255, 255, 1);
+}
+
+#score {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255, 1);
 }
