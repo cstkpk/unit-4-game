@@ -1,7 +1,8 @@
 body {
-    background-image: url("square-2696800_1280.png");
+    background-image: url("square-2696800_1280 copy.png");
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 h1 {
@@ -9,27 +10,28 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'Vast Shadow', cursive;
-    background-color: rgb(255, 255, 255, 1);
+    font-size: 50px;
+    background-color: rgb(255, 255, 255, 0.95);
 }
 
 .instructions {
     padding: 10px;
-    background-color: rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 0.95);
 }
 
 #random-number {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    background-color: rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 0.95);
 }
 
 #wins {
-    background-color: rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 0.95);
 }
 
 #losses {
-    background-color: rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 0.95);
 }
 
 #result {
@@ -37,7 +39,7 @@ h1 {
     letter-spacing: 4px;
     text-align: center;
     font-weight: bold;
-    background-color: rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 0.95);
 }
 
 .img-crystal {
@@ -47,11 +49,11 @@ h1 {
 }
 
 .total-score {
-    background-color: rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 0.95);
 }
 
 #score {
     font-size: 30px;
     font-weight: bold;
-    background-color: rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 0.95);
 }
