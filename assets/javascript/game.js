@@ -97,6 +97,15 @@ function newCrystal4() {
     console.log("New crystal 4 = " + crystal4);
 }
 
+// Result: Functions that tell the user whether they've won or lost
+function youWin() {
+    $("#result").text("You win!!!");
+}
+
+function youLose() {
+    $("#result").text("You lose...");
+}
+
 // Function to reset stats (other than wins and losses, which accumulate through all rounds of the game)
 function reset() {
     score = 0;
@@ -116,7 +125,7 @@ updateLosses();
 updateScore();
 
 // When the user clicks a crystal, it will run the following function: 
-$(".btn").on("click", function() {
+$(".img-crystal").on("click", function() {
 
 // If the user's score equals the randomly generated number, their score goes up by one and the game resets
 if (score === randomNumber) {
@@ -124,6 +133,7 @@ if (score === randomNumber) {
     updateWins();
     console.log("You win!");
     reset();
+    youWin();
 } 
 // If the user's score exceeds the randomly generated number, their losses go up by one and the game resets
 else if (score > randomNumber) {
@@ -131,6 +141,7 @@ else if (score > randomNumber) {
     updateLosses();
     console.log("You lose :(");
     reset();
+    youLose();
 }
 
 });
