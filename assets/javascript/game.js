@@ -1,5 +1,3 @@
-
-
 // We start the game with the following stats:
 var wins = 0;
 var losses = 0;
